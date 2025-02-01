@@ -10,11 +10,11 @@ Compose는 선언적이므로 Compose를 업데이트하는 유일한 방법은 
 
 - **화면 UI 상태**: 화면에 표시해야 하는 *항목*입니다. 예를 들어 `NewsUiState` 클래스에는 UI를 렌더링하는 데 필요한 뉴스 기사와 기타 정보가 포함될 수 있습니다. 이 상태는 앱 데이터를 포함하므로 대개 계층 구조의 다른 레이어에 연결됩니다.
     
-    ![alt text](image.png)
+    ![alt text](images/image.png)
     
 - **UI 요소 상태**: 렌더링 방식에 영향을 주는 UI 요소에 고유한 속성을 나타냅니다. UI 요소는 표시하거나 숨길 수 있으며 특정 글꼴이나 글꼴 크기, 글꼴 색상을 적용할 수 있습니다.
     
-    ![alt text](image-4.png)
+    ![alt text](images/image-4.png)
     
 
 # Stateful & Stateless Composable
@@ -67,7 +67,7 @@ fun StatefulCounter(modifier: Modifier = Modifier) {
 
 **단방향 데이터 흐름(UDF)은 상태는 아래로 이동하고 이벤트는 위로 이동하는 디자인 패턴**
 
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
 ### 1. **재사용성과 모듈화 증가**
 
@@ -207,7 +207,7 @@ val buttonState = remember{
 
 방금 예제처럼 **UI 요소 상태** 에 해당하는 State를 호이스팅하지 않는것은 Stateless 조건에 포함시키지 않겠습니다. 
 
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
 
 이렇게 컴포저블 간에 상태를 끌어올리지 않고, 외부의 어떤 컨테이너 (ViewModel)에서 모든 상태를 관리하며, 이 상태값을 생성하고, 변경하는 이벤트들이 composable로부터 트리거되어 해당 컨테이너로 전달된다면, 100% Stateless 컴포저블로 이루어진 아키텍처를 구성할 수 있지 않을까? 라는 생각이 들었습니다.
@@ -237,7 +237,7 @@ fun StatelessCounter(
 
 위의 StatelessCounter 예제를 다시 생각해봅시다. (2가지의 State를 더 추가했습니다.)
 
-![alt text](image-7.png)
+![alt text](images/image-7.png)
 기존에는 자식 Composable의 상태값을 부모 Composable에게로 호이스팅 했죠?
 
 그리고 그 상태값들을 모조리 부모 Composable이 관리했죠?
@@ -382,4 +382,4 @@ class CalculatorViewModel: ViewModel(), ContainerHost<CalculatorState, Calculato
 
 [상태를 호이스팅할 대상 위치  |  Jetpack Compose  |  Android Developers](https://developer.android.com/develop/ui/compose/state-hoisting?hl=ko)
 
-![alt text](image-8.png)
+![alt text](images/image-8.png)
