@@ -1,3 +1,13 @@
+### 💡들어가기
+
+- 해당 주제에 대한 선정이유 (순수하게 궁금해서 이런것도 OK)
+    - 스터디 내용 & 클론 코딩 중에 몇번 등장하면서 궁금하기도 했고, recomposition을 방지하기 위한 방법으로 고민해보면 좋을 것 같아서 선정하였습니다
+- 참고자료 레퍼런스
+    - https://medium.com/androiddevelopers/jetpack-compose-when-should-i-use-derivedstateof-63ce7954c11b
+    - https://developer.android.com/develop/ui/compose/side-effects#derivedstateof
+  
+<br></br>
+
 ## 🤓 derivedStateOf란?
 
 - **기존 상태에서 파생된 새로운 상태를 계산**하고, 그 값이 변경되었을 때만 다시 계산되도록 하는 것
