@@ -10,6 +10,8 @@
 2. 상호 작용 설정 (행동을 추가하기 위한 Modifier) : 클릭, 스크롤, 드래그, 확대/축소 등의 상호 작용을 설정 가능
 3. 구성 요소 조합 : 여러 Modifier를 연결해서 사용할 수 있어, 다양한 스타일을 조합 가능
 
+<br></br>
+
 # 2. Modifier의 체이닝
 
 - Modifier는 체이닝 함수
@@ -60,10 +62,13 @@ padding을 먼저 호출한 Column은 padding을 적용한 공간에는 click �
 https://developer.android.com/develop/ui/compose/modifiers#order-modifier-matters
 (깃허브에는 영상 업로드가 불가능해서 공식문서 링크로 대신합니다)
 
+<br></br>
 
 ### 왜.. 왜…. margin이 없어..?
+xml을 사용하다가 compose를 공부하면서 margin이 없다는 점에서 어떻게 구현을 해야 하나 조금 당황스럽기도(?) 했었는데요 !
+이와 관련해서 xml과 compose의 차이점을 살짝 알아보려 합니다
 
-
+<br></br>
 
 ### xml과의 차이점
 
@@ -76,6 +81,8 @@ xml에서는 margin은 요소의 “바깥쪽에”, padding은 요소의 “안
 + 추가적으로,
 
 ![alt text](image.png)
+
+<br></br>
 
 # 3. 고정된 크기를 설정할 때 사용하는 size / requiredsSize
 
@@ -96,6 +103,8 @@ requiredSize - 제약 조건을 무시하고 크기를 정함
 ```
 
 → 상위 요소의 크기가 100dp라고 하더라도 150dp로 크기가 설정됨
+
+<br></br>
 
 # 4. 꿀팁 아닌 꿀팁(?)
 
