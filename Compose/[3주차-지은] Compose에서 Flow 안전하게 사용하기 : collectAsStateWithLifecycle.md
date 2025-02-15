@@ -1,3 +1,13 @@
+### 💡들어가기
+
+- 해당 주제에 대한 선정이유 (순수하게 궁금해서 이런것도 OK)
+    - Flow는 직접 생명주기에 맞춰서 사용해야 하는데 Compose에서는 과연 어떻게 해야 안전하게 사용할까! 싶어서 가져와봤습니다
+- 참고자료 레퍼런스
+    - https://medium.com/androiddevelopers/consuming-flows-safely-in-jetpack-compose-cde014d0d5a3
+    - https://developer.android.com/develop/ui/compose/lifecycle
+  
+<br></br>
+
 Compose는 Recomposition이 발생할 수 있기 때문에, Flow를 직접 collect하면 불필요한 중복 구독이 발생할 수 있다
 
 ## 그렇다면 Compose에서 Flow를 안전하게 사용하려면 어떻게 해야할까 🤔
