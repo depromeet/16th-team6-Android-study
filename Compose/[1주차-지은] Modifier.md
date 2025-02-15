@@ -35,7 +35,7 @@ fun ArtistCard(/*...*/) {
 }
 ```
 
-[화면 기록 2025-01-23 오후 8.58.48.mov](https://prod-files-secure.s3.us-west-2.amazonaws.com/9c80dfa5-76a7-4e69-9ba7-d30b3388536a/3008b9b8-e2fb-4e06-a5a6-9db493c5b8ab/%E1%84%92%E1%85%AA%E1%84%86%E1%85%A7%E1%86%AB_%E1%84%80%E1%85%B5%E1%84%85%E1%85%A9%E1%86%A8_2025-01-23_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.58.48.mov)
+
 
 두 번째 예시
 
@@ -54,14 +54,16 @@ fun ArtistCard(/*...*/) {
 }
 ```
 
-[화면 기록 2025-01-23 오후 9.01.29.mov](https://prod-files-secure.s3.us-west-2.amazonaws.com/9c80dfa5-76a7-4e69-9ba7-d30b3388536a/f1fdd5f5-ac9a-4efc-b193-a8e6c69cbb04/%E1%84%92%E1%85%AA%E1%84%86%E1%85%A7%E1%86%AB_%E1%84%80%E1%85%B5%E1%84%85%E1%85%A9%E1%86%A8_2025-01-23_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_9.01.29.mov)
-
 → clickable을 먼저 호출한 Column은 padding을 적용한 공간까지 click 효과가 나타나지만,
 padding을 먼저 호출한 Column은 padding을 적용한 공간에는 click 효과가 나타나지 않음
 
+https://developer.android.com/develop/ui/compose/modifiers#order-modifier-matters
+(깃허브에는 영상 업로드가 불가능해서 공식문서 링크로 대신합니다)
+
+
 ### 왜.. 왜…. margin이 없어..?
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/9c80dfa5-76a7-4e69-9ba7-d30b3388536a/21e8f803-f912-492f-bcf3-83c58e48d916/image.png)
+
 
 ### xml과의 차이점
 
@@ -73,7 +75,7 @@ xml에서는 margin은 요소의 “바깥쪽에”, padding은 요소의 “안
 
 + 추가적으로,
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/9c80dfa5-76a7-4e69-9ba7-d30b3388536a/7061f73d-67e8-43bd-a9f6-9c54cb1832b1/image.png)
+![alt text](image.png)
 
 # 3. 고정된 크기를 설정할 때 사용하는 size / requiredsSize
 
