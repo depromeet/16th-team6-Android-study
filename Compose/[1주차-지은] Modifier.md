@@ -1,3 +1,12 @@
+### 💡들어가기
+
+- 해당 주제에 대한 선정이유 (순수하게 궁금해서 이런것도 OK)
+    - Compose로 화면을 그릴 때 가장 기본적인 요소라고 생각되어서 선정하였습니다
+- 참고자료 레퍼런스
+    - https://developer.android.com/develop/ui/compose/modifiers#best_practices_for_reusing_modifiers
+  
+<br></br>
+
 # 1. Modifier란?
 
 ### 1-1. Modifier란?
